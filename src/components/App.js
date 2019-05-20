@@ -7,6 +7,7 @@ import {
 import Red from './Red';
 import Blue from './Blue';
 import Green from './Green';
+import Color from './Color';
 
 export default function App() {
   return (
@@ -14,9 +15,10 @@ export default function App() {
       <Router>
         <Header/>
         <nav>
-          <Route path="/Red" component={Red}></Route>
-          <Route path="/Blue" component={Blue}></Route>
-          <Route path="/Green" component={Green}></Route>
+          <Route exact path="/Red" component={Red}></Route>
+          <Route exact path="/Blue" component={Blue}></Route>
+          <Route exact path="/Green" component={Green}></Route>
+          <Route path="/:color" component={Color} />
         </nav>
       </Router>
     </>
