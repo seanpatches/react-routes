@@ -11,8 +11,8 @@ import Green from './Green';
 export default function App() {
   return (
     <>
-    <Header/>
       <Router>
+        <Header/>
         <nav>
           <Route path="/Red" component={Red}></Route>
           <Route path="/Blue" component={Blue}></Route>
