@@ -8,6 +8,7 @@ import Red from './Red';
 import Blue from './Blue';
 import Green from './Green';
 import Color from './Color';
+import ColorQuery from './ColorQuery';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route exact path="/Blue" component={Blue}></Route>
           <Route exact path="/Green" component={Green}></Route>
           <Route path="/:color" component={Color} />
+          <Route path="/color" component={ColorQuery} />
         </nav>
       </Router>
     </>
